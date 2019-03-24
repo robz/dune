@@ -51,7 +51,7 @@ is ignored. For instance:
 Atoms
 -----
 
-An atom is a non-empty contiguous sequences of character other than
+An atom is a non-empty contiguous sequence of characters other than
 special characters. Special characters are:
 
 - spaces, horizontal tabs, newlines and form feed
@@ -69,7 +69,7 @@ Strings
 
 A string is a sequence of characters surrounded by double quotes. A
 string represent the exact text between the double quotes, except for
-escape sequences. Escape sequence are introduced by the a backslash
+escape sequences. Escape sequences are introduced by the backslash
 character. Dune recognizes and interprets the following escape
 sequences:
 
@@ -95,7 +95,7 @@ instance the following two strings represent the same text:
       def"
 
 In most places where Dune expect a string, it will also accept an
-atom. As a result it possible to write most Dune configuration file
+atom. As a result it is possible to write most Dune configuration file
 using very few double quotes. This is very convenient in practice.
 
 End of line strings
@@ -130,7 +130,7 @@ Lists are sequences of values enclosed by parentheses. For instance
 ``(x y z)`` is a list containing the three atoms ``x``, ``y`` and
 ``z``. Lists can be empty, for instance: ``()``.
 
-Lists can be nested, allowing to represent arbitrarily complex
+Lists can be nested, allowing you to represent arbitrarily complex
 descriptions. For instance:
 
 .. code::
@@ -146,9 +146,9 @@ Variables
 ---------
 
 Dune allows variables in a few places. Their interpretation often
-depend on the context in which they appear.
+depends on the context in which they appear.
 
-The syntax of variables is as follow:
+The syntax of variables is as follows:
 
 .. code::
 
@@ -177,7 +177,7 @@ like:
 
           (lang dune 1.0)
 
-Additionally, they can contains the following stanzas.
+Additionally, they can contain the following stanzas.
 
 name
 ----
@@ -232,7 +232,7 @@ Scopes
 
 Any directory containing at least one ``<package>.opam`` file defines
 a scope. This scope is the sub-tree starting from this directory,
-excluding any other scopes rooted in sub-direcotries.
+excluding any other scopes rooted in sub-directories.
 
 Typically, any given project will define a single scope. Libraries and
 executables that are not meant to be installed will be visible inside
